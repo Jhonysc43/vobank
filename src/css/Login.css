@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+}
+
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tela-login{
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.tela-login h1{
+    color: #e00000
+}
+
+.email, .senha{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid #e00000;
+}
+
+
+.entrar{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #E21A22;
+
+
+    background-image: linear-gradient(55deg, #e00000, #E21A22);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    background-position-x: right;
+
+    transition: background-size 500ms;
+}
+
+.entrar:hover{
+    background-size: 100% 100%;
+    background-position-x: left;
+    color: #fff;
+}
+
+
+
+.tela-texto{
+    background: linear-gradient(55deg, #e00000, #E21A22);
+    height: 100%;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.texto{
+    color: #fff;
+}
+
+.texto h1, .tela-login h1{
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 50px;
+}
+
+.texto p{
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 25px;
+}
+
+.texto button{
+    border: none;
+    padding: 20px 40px;
+    border-radius: 20px;
+    color: #E21A22;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.texto a button{
+    text-decoration: none;
+}
+
+
+
+/* animaĆ§Ć£o fundo */
+.area {
+    position: absolute;
+    background: transparent;
+    background: -webkit-linear-gradient(to left, red, red);
+    width: 50%;
+    height: 100vh;
+    z-index:-1;
+}
+
+.circles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(55deg, #e00000, #E21A22);;
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    left: 260px;
+}
+
+.circles li:nth-child(1) {
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+    left: 75%;
+    width: 55px;
+    height: 55px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+    left: 35%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 2s;
+}
+
+.circles li:nth-child(8) {
+    left: 50%;
+    width: 2px;
+    height: 2px;
+    animation-delay: 15s;
+    animation-duration: 5s;
+}
+
+.circles li:nth-child(9) {
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+.circles li:nth-child(11) {
+    left: 16%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+.circles li:nth-child(12) {
+    left: 89%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 2s;
+    animation-duration: 13s;
+}
+
+.circles li:nth-child(13) {
+    left: 68%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 0s;
+    animation-duration: 15s;
+}
+
+.circles li:nth-child(14) {
+    left: 9%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 2s;
+    animation-duration: 11s;
+}
+
+.circles li:nth-child(15) {
+    left: 5%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 1s;
+    animation-duration: 11s;
+}
+
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+
+
+/* responsividade */
+
+@media screen and (max-width: 700px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tela-texto {
+        background: linear-gradient(55deg, #0054cd, #E21A22);
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tela-login {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .area {
+        position: absolute;
+        background: transparent;
+        background: -webkit-linear-gradient(to left, red, red);
+        width: 85%;
+        height: 100vh;
+        z-index:-1;
+    }
+}

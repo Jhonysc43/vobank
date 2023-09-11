@@ -1,0 +1,880 @@
+@font-face{
+    font-family: 'claranet';
+    src: url('../fonte/AkzidenzGroteskPro-Light.ttf');
+}
+
+
+*{
+    margin: 0;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'claranet', sans-serif;
+    background: #ffffff;
+}
+
+
+/* opções do menu */
+.fundo{
+    height: 100vh;
+    width: 20%;
+    background-color: #0092e0;
+}
+.icone-menu, .icone-fechar{
+    display: none;
+}
+.menu{
+    text-align: center;
+}
+
+.menu .opcoes{
+    text-align: left;
+    padding-left: 15px;
+}
+.fundo .menu p{
+    color: #fff;
+    margin: 15px 0 15px 0;
+    font-size: 20px;
+}
+
+.usuario-img{
+    cursor: pointer;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+}
+
+input[type='file']{
+    display: none;
+}
+
+.opcoes{
+    padding: 0;
+    /* margin: 0 7px 0 7px; */
+    font-size: 20px;
+}
+
+.opcoes li{
+    margin: 10px 0 10px 0;
+    padding: 10px 0 10px 0;
+    color: #fff;
+    list-style-type: none;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.opcoes li{
+    background-image: linear-gradient(55deg, #fff, #fffafa);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    background-position-x: right;
+
+    transition: background-size 500ms;
+}
+
+.opcoes li:hover{
+    background-size: 100% 100%;
+    background-position-x: left;
+    color: #e00000;
+}
+
+.opcoes a{
+    text-decoration: none;
+}
+
+.logo-claranet{
+    padding-top: 100px;
+}
+
+/* reponsividade Home*/
+
+@media screen and (max-width : 900px){
+    .usuario-img, .logo-claranet{
+        width: 80px;
+    }
+    .opcoes{
+        padding: 0;
+        margin: 0 0 0 5px;
+        text-align: left;
+        font-size: 15px;
+    }
+}
+
+
+
+.logo{
+    margin-top: 100px;
+}
+
+/* texto principal home */
+.texto-fundo{
+    display: inline;
+    height: 100vh;
+    width: 70%;
+}
+
+.texto-principal{
+    text-align: center;
+    color: #e00000;
+    margin-top: 20px;
+}
+
+.texto-principal h1{
+    font-size: 40px;
+    margin: 0 0 40px 0;
+}
+
+.texto-principal p{
+    font-size: 20px;
+}
+
+
+
+/* texto principal saldo */
+.saldo-fundo{
+    display: none;
+    height: 100vh;
+    width: 70%;
+}
+
+.saldo-principal{
+    text-align: center;
+    color: #e00000;
+    margin-top: 20px;
+}
+
+.saldo-principal hr{
+    margin: 0 25% 3% 25%;
+    text-align: center;
+    background-color: #e00000;
+    border: 1px solid #e00000;
+}
+
+.saldo-principal .h1{
+    font-size: 40px;
+}
+
+.saldo-principal p{
+    font-size: 20px;
+    text-align: left;
+    margin: 1% 0 0 30%;
+}
+
+.saldo-principal .valor{
+    background-color: #fff;
+    margin: 1px 40% 0 30%; /*perdão pela gambiarra*/
+    padding: 5px;
+    color: #008000;
+    width: 30%;
+}
+
+
+
+
+
+/* texto principal do extrato financeiro */
+.extrato-fundo{
+    display: none;
+    height: 100vh;
+    width: 70%;
+}
+
+.extrato-principal{
+    text-align: center;
+    color: #e00000;
+    margin-top: 15px;
+}
+
+.extrato-principal hr{
+    margin: 0 20% 3% 20%;
+    text-align: center;
+    background-color: #e00000;
+    border: 1px solid #e00000;
+}
+
+.extrato-principal h1{
+    font-size: 35px;
+}
+
+.grupo-extrato{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 10% 0 10%;
+    font-size: 18px;
+}
+
+.extrato-principal p{
+    text-align: left;
+    margin: 1% 0 0 30%;
+}
+
+.fundo-compra1,
+.fundo-compra2,
+.fundo-compra3,
+.fundo-compra4,
+.fundo-compra5,
+.fundo-compra6,
+.fundo-compra7{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20% 10px 20%;
+    background-color: #fff;
+    padding: 10px;
+    color: #34454E;
+    font-size: 15px;
+}
+
+
+
+/* Texto principal de transferência */
+
+.transferência-fundo{
+    display: none;
+    height: 100vh;
+    width: 70%;
+}
+
+.transferência-principal{
+    text-align: center;
+    color: #e00000;
+    margin-top: 20px;
+}
+
+.transferência-principal hr{
+    margin: 0 20% 3% 20%;
+    text-align: center;
+    background-color: #e00000;
+    border: 1px solid #e00000;
+}
+
+.transferência-principal h1{
+    font-size: 35px;
+}
+
+.bancos_transferencia,
+.conta_transferencia{
+    border: none;
+    color: #fff;
+    outline: none;
+    background-color: #34454E;
+    padding: 8px;
+    font-family: 'claranet', Arial;
+    font-size: 15px;
+    padding: 10px 150px;
+    margin: 2px 0px;
+}
+
+.bancos_transferencia, .nome_cliente{
+    cursor: pointer;
+}
+
+.transferencia-valores{
+    display: flex;
+    justify-content: center;
+}
+
+.agencia_transferencia,
+.conta_transferencia,
+.valor_transferencia,
+.titular_transferencia,
+.botao_transferencia,
+.cpf_transferencia{
+    font-size: 15px;
+    margin: 10px 0px;
+    padding: 8px 5px;
+    background-color: #34454E;
+    border: none;
+    color: #fff;
+    font-family: 'claranet', sans-serif;
+    outline: none;
+}
+
+.agencia_transferencia::placeholder,
+.conta_transferencia::placeholder,
+.valor_transferencia::placeholder,
+.titular_transferencia::placeholder,
+.cpf_transferencia::placeholder{
+    color: #fff;
+}
+
+.botao_transferencia{
+    border-radius: 15px;
+    background-color: #e00000;
+    cursor: pointer;
+}
+
+
+/* tirar a setinha do input number */
+.agencia_transferencia[type=number]::-webkit-inner-spin-button,
+.conta_transferencia[type=number]::-webkit-inner-spin-button,
+.valor_transferencia[type=number]::-webkit-inner-spin-button,
+.cpf_transferencia[type=number]::-webkit-inner-spin-button
+{ 
+    -webkit-appearance: none;
+}
+
+
+
+
+
+
+
+
+
+/* Texto principal do deposito */
+
+.deposito-fundo{
+    display: none;
+    height: 100vh;
+    width: 70%;
+}
+
+.deposito-principal{
+    text-align: center;
+    color: #e00000;
+    margin-top: 20px;
+}
+
+.deposito-principal hr{
+    margin: 0 20% 3% 20%;
+    text-align: center;
+    background-color: #e00000;
+    border: 1px solid #e00000;
+}
+
+.deposito-principal h1{
+    font-size: 35px;
+}
+
+.deposito-principal h2{
+    font-size: 25px;
+    margin: 0 0px 5px 0;
+}
+
+
+
+.depositar{
+    font-size:15px;
+    margin: 10px 30px;
+    padding: 8px 60px;
+    background-color: #e00000;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'claranet', sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+
+.bancos_depositar,
+.contas_depositar{
+    border: none;
+    color: #fff;
+    outline: none;
+    background-color: #34454E;
+    padding: 8px;
+    font-family: 'claranet', Arial;
+    font-size: 15px;
+    padding: 10px 150px;
+    margin: 2px 0px;
+    cursor: pointer;
+    
+}
+
+.depositar-valores{
+    display: flex;
+    justify-content: center;
+}
+.form-2{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px;
+    width: 191px;
+}
+
+.agencia_depositar,
+.conta_depositar,
+.valor_depositar,
+.titular_depositar,
+.botao_depositar,
+.cpf_depositar,
+.valor_deposito{
+    font-size: 15px;
+    margin: 10px 0px;
+    padding: 8px 5px;
+    background-color: #34454E;
+    border: none;
+    color: #fff;
+    font-family: 'claranet', sans-serif;
+    outline: none;
+}
+.botao_depositar{
+    font-size: 15px;
+    padding: 8px 60px;
+    background-color: #e00000;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-family: 'claranet', sans-serif;
+    outline: none;
+    cursor: pointer;
+}
+
+.agencia_depositar::placeholder,
+.conta_depositar::placeholder,
+.valor_depositar::placeholder,
+.titular_depositar::placeholder,
+.cpf_depositar::placeholder,
+.valor_deposito::placeholder{
+    color: #fff;
+}
+
+
+
+.agencia_depositar[type=number]::-webkit-inner-spin-button,
+.conta_depositar[type=number]::-webkit-inner-spin-button,
+.cpf_depositar[type=number]::-webkit-inner-spin-button,
+.valor_depositar[type=number]::-webkit-inner-spin-button,
+.valor_deposito[type=number]::-webkit-inner-spin-button
+{ 
+    -webkit-appearance: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Texto principal do pix */
+
+.pix-fundo{
+    display: none;
+    height: 100vh;
+    width: 70%;
+}
+
+.pix-principal{
+    text-align: center;
+    color: #e00000;
+    margin-top: 20px;
+}
+
+.pix-principal hr{
+    margin: 0 20% 3% 20%;
+    text-align: center;
+    background-color: #e00000;
+    border: 1px solid #e00000;
+}
+
+.pix-principal h1{
+    font-size: 35px;
+}
+
+
+.btn{
+    border: none;
+    padding: 10px;
+    margin: 5px 15px 10px 0;
+    width: 50%;
+    background-color: #34454E;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+
+    background-image: linear-gradient(55deg, #fff, #fffafa);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    background-position-x: right;
+
+    transition: background-size 500ms;
+
+}
+
+.btnM{
+    border: none;
+    padding: 10px;
+    margin: 5px 15px 5px 0;
+    width: 50%;
+    background-color: #34454E;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+
+
+    background-image: linear-gradient(55deg, #fff, #fffafa);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    background-position-x: right;
+
+    transition: background-size 500ms;
+}
+
+.btnM:hover,
+.btn:hover{
+    background-size: 100% 100%;
+    background-position-x: left;
+    color: #e00000;
+}
+
+.sem-fun{
+    padding-top: 50px;
+}
+
+
+
+
+
+
+
+/* Texto principal do recarga de celular */
+
+
+.recarga-fundo{
+    display: none;
+    height: 100vh;
+    width: 70%;
+}
+
+.recarga-principal{
+    text-align: center;
+    color: #e00000;
+    margin-top: 20px;
+}
+
+.recarga-principal hr{
+    margin: 0 25% 3% 25%;
+    text-align: center;
+    background-color: #e00000;
+    border: 1px solid #e00000;
+}
+
+.recarga-principal h1{
+    font-size: 40px;
+}
+
+
+
+.lista{
+    margin: 0 0 10px 0;
+    width: 56%;
+    background-color: #34454E;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.valor, .numero{
+    background-color: #34454E;
+    border: none;
+    padding: 10px;
+    width: 25%;
+    margin: 0 10px 0 10px;
+    color: #fff;
+    outline: none;
+}
+
+.valor::placeholder,
+.numero::placeholder{
+    color: #fff;
+}
+
+.valor[type=number]::-webkit-inner-spin-button,
+.numero[type=number]::-webkit-inner-spin-button { 
+    -webkit-appearance: none;
+}
+.valor[type=number],
+.valor[type=number] { 
+   -moz-appearance: textfield;
+   appearance: textfield;
+}
+
+
+.btn-enviar{
+    margin-top: 25px;
+    border: none;
+    width: 35%;
+    padding: 10px;
+    font-size: 20px;
+    background-color: #e00000;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+
+    background-image: linear-gradient(55deg, #fff, #fffafa);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    background-position-x: right;
+
+    transition: background-size 500ms;
+}
+
+.btn-enviar:hover{
+    background-size: 100% 100%;
+    background-position-x: left;
+    color: #e00000;
+}
+
+
+
+
+
+/* Texto principal do suporte */
+.suporte-fundo{
+    display: none;
+    height: 100vh;
+    width: 70%;
+}
+
+.suporte-principal{
+    text-align: center;
+    color: #e00000;
+    margin-top: 20px;
+}
+
+.suporte-principal hr{
+    margin: 0 20% 3% 20%;
+    text-align: center;
+    background-color: #e00000;
+    border: 1px solid #e00000;
+}
+
+.suporte-principal h1{
+    font-size: 30px;
+}
+
+.suporte-principal h2{
+    text-align: center;
+    font-size: 25px;
+}
+
+
+.formulario_suporte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.formulario_suporte, .caixa_suporte, .btn_suporte, .assunto_suporte,
+.email_suporte, .nome_suporte{
+    color: #fff;
+    margin: 10px 50px 0 50px;
+    outline: none;
+    border: 0;
+    padding: 10px;
+}
+
+
+.caixa_suporte, .btn_suporte, .assunto_suporte,
+.email_suporte, .nome_suporte{
+    background-color: #34454E;
+}
+
+.email_suporte::placeholder,
+.caixa_suporte::placeholder,
+.nome_suporte::placeholder,
+.assunto_suporte::placeholder{
+    color: #fff;
+}
+
+
+
+.btn_suporte{
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 15px;
+    background: #e00000;
+    color: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+@media(max-width: 900px){
+    .usuario-img{
+        width: 80px;
+        height: 80px;
+    }
+    .logo{
+        margin-top: 100px;
+        width: 300px;
+    }
+}
+
+
+@media screen and (max-width: 700px){
+
+
+    .logo{
+        margin-top: 100px;
+        width: 200px;
+    }
+
+    /* home */
+     .fundo{
+        display: none;
+        height: 50%;
+        width: 100vw;
+    }
+
+    
+    .opcoes{
+        text-align: center;
+    }
+    
+    .icone-menu{
+        display: inline;
+    }
+    .icone-fechar{
+        margin: 15px 0;
+    }
+
+
+    .texto-principal h1{
+        font-size: 20px;
+        margin: 0 0 40px 0;
+    }
+    .texto-principal p{
+        font-size: 15px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .saldo-principal .valor {
+        background-color: #34454E;
+        margin: 1px 40% 0 30%;
+        padding: 5px;
+        color: #fff;
+        width: 50%;
+    }
+
+
+    /* extrato */
+    .fundo-compra1, .fundo-compra3, .fundo-compra5, .fundo-compra7, 
+    .fundo-compra2, .fundo-compra4, .fundo-compra6 {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px;
+        background-color: #34454E;
+        padding: 10px;
+        color: #fff;
+        font-size: 10px;
+    }
+
+    /* transferencia */
+    .bancos_transferencia{
+        font-size: 15px;
+        padding: 10px 50px;
+        margin: 2px 0px;
+    }
+    .transferencia-valores {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* deposito */
+    .bancos_depositar, .contas_depositar {
+        font-size: 15px;
+        padding: 10px 50px;
+        margin: 2px 0px;
+    }
+    .depositar-valores {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    /* pix */
+
+     .btnM, .btn {
+        padding: 10px;
+        margin: 5px 15px 5px 0;
+        width: 100%;
+    }
+
+    .pix-principal h1 {
+        font-size: 25px;
+    }
+
+     /* recarga-celular */
+
+     
+    .lista {
+        margin: 0 0 10px 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .valor, .numero {
+        padding: 10px;
+        width: 92%;
+        margin: 10px 0 10px 0;
+    }
+
+    .btn-enviar {
+        margin-top: 25px;
+        width: 100%;
+        padding: 10px;
+    }
+
+
+} 
+
+@media screen and (max-width: 600px){
+    .formulario_suporte, .caixa_suporte, .btn_suporte, .assunto_suporte,
+    .email_suporte, .nome_suporte{
+        margin: 10px 0px 10px 0;
+    }
+
+    .logo{
+        margin-top: 100px;
+        width: 150px;
+    }
+
+}
+
+
+
+@keyframes menu{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100vw;
+    }
+}
+
+
+@keyframes menu-icone{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
