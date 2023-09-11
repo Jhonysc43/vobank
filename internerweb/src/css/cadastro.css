@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+}
+
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.formulario{
+    height: 100%;
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tela-formulario{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.formulario h1{
+    color: #e00000;
+}
+
+.e-mail, .senha, .cep, .cpf, .senha, .nome, .sobrenome{
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid #e00000;
+}
+
+
+.botao-cadastro{
+    display: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #e00000;
+
+
+    background-image: linear-gradient(55deg, #E21A22, #e00000);
+    background-repeat: no-repeat;
+    background-size: 0 100%;
+    background-position-x: right;
+
+    transition: background-size 500ms;
+}
+
+.botao-cadastro:hover{
+    background-size: 100% 100%;
+    background-position-x: left;
+    color: #fff;
+}
+
+
+
+.tela-texto{
+    background: linear-gradient(55deg, #1a4ee2, #00b7e0d1);
+    height: 100%;
+    width: 60%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto{
+    color: #fff;
+}
+
+.texto h1, .formulario h1{
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 50px;
+}
+
+.texto p{
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 25px;
+}
+
+.texto button{
+    border: none;
+    padding: 20px 40px;
+    border-radius: 20px;
+    color: #e00000;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.texto a button{
+    text-decoration: none;
+}
+
+
+/* validação dos formulario */
+
+#error_nome, #error_senha, #error_cpf, #error_email, #error_sobrenome{
+    color: rgb(255, 0, 0);
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    text-align: left;
+}
+
+@media screen and (max-width: 700px){
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tela-texto {
+        background: linear-gradient(55deg, #E21A22, #e00000);
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulario {
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulario h1 {
+        font-family: 'Poppins', sans-serif;
+        padding: 0;
+    }
+}
